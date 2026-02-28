@@ -3,7 +3,7 @@
 
 This project analyzes historical Hyperliquid trader behavior in relation to Bitcoin market sentiment (Fear vs Greed). It computes key performance and behavioral metrics, segments traders into meaningful groups, and proposes actionable trading rules based on sentiment and trader‑type.
 
-## 📁 Project Structure
+## Project Structure
 
 project/
 ├── data/
@@ -22,7 +22,7 @@ project/
 └── writeup.md # Short methodology + insights + strategy
 
 
-## 🧰 Requirements
+## Requirements
 
 - Python 3.8+
 - `pandas`
@@ -44,7 +44,7 @@ hyperliquid_trader_data.csv (trader trades with account, symbol, execution price
 
 Ensure the file paths in notebooks/trader_sentiment_analysis.ipynb or src/data_prep.py point to these files.
 
-▶️ How to run
+ How to run
 1. Run the main analysis
 Open and execute the notebook:
 
@@ -88,7 +88,7 @@ View daily PnL distributions by sentiment.
 
 Inspect raw aggregated tables.
 
-📊 Outputs
+Outputs
 The analysis generates:
 
 CSV files in outputs/tables/ (e.g., segment summaries, performance by sentiment).
@@ -103,7 +103,7 @@ Key insights (3+ backed by charts/tables).
 
 Strategy recommendations (2 explicit “rules of thumb” for traders).
 
-💡 Example strategy rules (from findings)
+Example strategy rules (from findings)
 Rule 1 – Leverage control on Fear days
 High‑leverage traders underperform during Fear days.
 → “During Fear days, reduce max leverage for high‑leverage accounts by 20–30% of their usual cap.”
@@ -112,7 +112,7 @@ Rule 2 – Encourage activity for consistent winners on Greed days
 Consistent winners maintain stable win rates and PnL even when trade frequency increases on Greed days.
 → “During Greed days, allow frequent, consistent‑winner traders to increase position size and trade frequency, but monitor drawdowns.”
 
-🧩 Optional bonuses
+Optional bonuses
 Predictive model in src/model.py: next‑day PnL bucket classifier using sentiment + behavior features.
 
 Clustering of traders into behavioral archetypes (aggressive losers, conservative winners, etc.).
