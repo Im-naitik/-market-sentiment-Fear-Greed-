@@ -35,7 +35,7 @@ You can install dependencies with:
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn streamlit
-📥 Data setup
+Data setup
 Download the two datasets and place them in the data/ folder:
 
 bitcoin_market_sentiment.csv (Fear/Greed labels by Date)
@@ -62,7 +62,7 @@ Segment traders (high/low leverage, frequent/infrequent, consistent/inconsistent
 
 Produce tables and charts showing performance and behavior differences between Fear and Greed days.
 
-2. Run the predictive model (optional)
+2. Run the predictive model
 Execute the model script:
 
 bash
@@ -75,7 +75,7 @@ Trains a simple classifier to predict next‑day profitability buckets (Negative
 
 Outputs train/test scores and feature importance.
 
-3. Run the Streamlit dashboard (optional)
+3. Run the Streamlit dashboard
 Start the lightweight dashboard:
 
 bash
@@ -95,14 +95,6 @@ CSV files in outputs/tables/ (e.g., segment summaries, performance by sentiment)
 
 PNG charts in outputs/charts/ (boxplots, time‑series plots, etc.).
 
-A short write‑up in writeup.md summarizing:
-
-Methodology (data prep, feature definitions, clustering/segmentation).
-
-Key insights (3+ backed by charts/tables).
-
-Strategy recommendations (2 explicit “rules of thumb” for traders).
-
 Example strategy rules (from findings)
 Rule 1 – Leverage control on Fear days
 High‑leverage traders underperform during Fear days.
@@ -119,9 +111,5 @@ Clustering of traders into behavioral archetypes (aggressive losers, conservativ
 
 Streamlit dashboard (src/dashboard.py) for interactive exploration of results.
 
-Maintained by: [Your Name]
-Date: February 2026
-
-undefined
-
 maintained by NAITIK KATIYAR
+date - feb 28 2026
